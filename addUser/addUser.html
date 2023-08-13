@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <script src="./addUser.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        first name:<input type="text" name="fName">
+    </label>
+    <label>
+        last name:<input type="text" name="lName">
+    </label>
+    <label>
+        age <input type="number" name="age">
+    </label>
+    <label>
+        email: <input type="email" name="mail">
+    </label>
+    <button type="submit" onclick="sendData()">Send</button>
+</body>
+
+</html>
