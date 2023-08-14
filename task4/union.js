@@ -22,22 +22,6 @@ async function f1() {
 
     users = await Promise.allSettled(users);
     console.log(JSON.stringify(users,null,4));
-
-    // users.forEach(user => {
-    //     user.posts = fetch(baseURL + '/posts/' + user.id).then(res => {
-    //         if (res.ok) {
-    //             res.json();
-    //         } else {
-    //             throw new Error('Request denied!');
-    //         }
-    //     }).then(data => {
-    //         return data;
-    //     }).catch(err => {
-    //         console.log(err);
-    //     });
-    // });
-
-    // console.log(users);
 }
 
 async function asyncGetData(URL) {
